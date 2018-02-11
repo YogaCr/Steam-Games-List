@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1b2838"
     android:orientation="vertical">
 
     <ImageView
         android:id="@+id/header_image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="160dp" />
 
     <TextView
         android:id="@+id/title"
@@ -16,7 +17,7 @@
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
         android:text="Judul"
-        android:textColor="#000"
+        android:textColor="#fff"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -24,13 +25,15 @@
         android:id="@+id/developer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Developer : " />
+        android:text="Developer : "
+        android:textColor="#fff" />
 
     <TextView
         android:id="@+id/publisher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Publisher : " />
+        android:text="Publisher : "
+        android:textColor="#fff" />
 
     <TextView
         android:layout_width="match_parent"

@@ -27,7 +27,7 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.Holder> {
 
     @Override
     public Holder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_data, null);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_data, parent, false);
         return new Holder(v);
     }
 
@@ -37,7 +37,7 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.Holder> {
         holder.tvTitle.setText(g.getTitle());
         holder.tvDeveloper.setText("Developer : " + g.getDeveloper());
         holder.tvPublisher.setText("Publisher : " + g.getPublisher());
-        Picasso.with(context).load(g.getUrlImage()).into(holder.ivHeader);
+        Picasso.with(context).load(g.getUrlImage()).fit().into(holder.ivHeader);
     }
 
     @Override
